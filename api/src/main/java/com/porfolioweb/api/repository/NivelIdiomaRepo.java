@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.porfolioweb.api.repository;
 
-/**
- *
- * @author Ana
- */
-public interface NivelIdioma {
+import com.porfolioweb.api.model.NivelIdioma;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface NivelIdiomaRepo extends JpaRepository <NivelIdioma, Long> {
     
 }
