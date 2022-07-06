@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.porfolioweb.api.service;
 
-/**
- *
- * @author Ana
- */
+import com.porfolioweb.api.model.PorcentajeSkill;
+import java.util.List;
+
+
 public interface IPorcentajeSkillService {
-    
+    public List<PorcentajeSkill> verPorcentajeSkill();
+    public void createPorcentajeSkill (PorcentajeSkill pskill);
+    public void updatePorcentajeSkill (PorcentajeSkill pskill);
+    public void deletePorcentajeSkill (Long id);
+    public PorcentajeSkill findPorcentajeSkill(Long id);
 }

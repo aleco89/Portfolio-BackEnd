@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.porfolioweb.api.service;
 
-/**
- *
- * @author Ana
- */
+import com.porfolioweb.api.model.NivelIdioma;
+import java.util.List;
+
+
 public interface INivelIdiomaService {
-    
+    public List<NivelIdioma> verNivelIdioma();
+    public void createNivelIdioma (NivelIdioma ni);
+    public void updateNivelIdioma (NivelIdioma ni);
+    public void deleteNivelIdioma (Long id);
+    public NivelIdioma findNivelIdioma (Long id);    
 }

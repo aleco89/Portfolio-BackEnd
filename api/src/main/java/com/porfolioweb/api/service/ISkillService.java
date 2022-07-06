@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.porfolioweb.api.service;
 
-/**
- *
- * @author Ana
- */
+import com.porfolioweb.api.model.Skill;
+import java.util.List;
+
+
 public interface ISkillService {
-    
+    public List<Skill> verSkill();
+    public void createSkill (Skill sk);
+    public void updateSkill (Skill sk);
+    public void deleteSkill (Long id);
+    public Skill findSkill(Long id);
 }

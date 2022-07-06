@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.porfolioweb.api.service;
 
-/**
- *
- * @author Ana
- */
+import com.porfolioweb.api.model.Proyecto;
+import java.util.List;
+
+
 public interface IProyectoService {
-    
+    public List<Proyecto> verProyecto();
+    public void createProyecto (Proyecto proy);
+    public void updateProyecto (Proyecto proy);
+    public void deleteProyecto (Long id);
+    public Proyecto findProyecto(Long id);
 }

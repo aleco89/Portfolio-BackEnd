@@ -26,28 +26,7 @@ public class EducacionService implements IEducacionService {
     @Override
     public void updateEducacion(Educacion edu) {      
         eduRepo.save(edu);
-    }
-    
-    /*    public void modificar(Habilidad habilidad)throws HabilidadNotFoundException {
-        Habilidad guardada=traer(habilidad.getId());
-        if(guardada!=null){
-            guardada.setNombre(habilidad.getNombre());
-            guardada.setDescripcion(habilidad.getDescripcion());
-            guardada.setPorcentaje(habilidad.getPorcentaje());
-            habilidadRepo.save(guardada);
-        }
-    }
-     public void editarProyecto (Long id, Proyecto pro){
-         proyectoRepo.findById(id).map( editExpe -> {
-         editExpe.setTitulo(pro.getTitulo());
-         editExpe.setImagen(pro.getImagen());
-         editExpe.setDescripcion(pro.getDescripcion());
-
-         return proyectoRepo.save(editExpe);
-      });
-    
-    */ 
-    
+    }    
     
     @Override
     public void deleteEducacion(Long id) {

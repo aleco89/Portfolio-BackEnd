@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.porfolioweb.api.service;
 
-/**
- *
- * @author Ana
- */
+import com.porfolioweb.api.model.InstitucionEmpresa;
+import java.util.List;
+
+
 public interface IInstitucionEmpresaService {
-    
+    public List<InstitucionEmpresa> verInstitucionEmpresa();
+    public void createInstitucionEmpresa (InstitucionEmpresa ie);
+    public void updateInstitucionEmpresa (InstitucionEmpresa ie);
+    public void deleteInstitucionEmpresa (Long id);
+    public InstitucionEmpresa findInstitucionEmpresa (Long id);
 }
