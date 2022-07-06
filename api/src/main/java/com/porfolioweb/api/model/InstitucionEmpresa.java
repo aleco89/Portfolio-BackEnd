@@ -2,6 +2,7 @@
 package com.porfolioweb.api.model;
 
 import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,6 +18,7 @@ public class InstitucionEmpresa implements Serializable {
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
     private String nombre;
+    @Column(name = "url_logo")
     private String urlLogo;
 
     public InstitucionEmpresa() {

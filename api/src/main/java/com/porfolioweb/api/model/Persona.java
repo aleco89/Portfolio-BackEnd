@@ -18,7 +18,7 @@ public class Persona implements Serializable {
     private Long id;
     private String nombre;
     private String apellido;
-    private String sobre_mi;
+    private String sobreMi;
     private String lugarResidencia;
     private String urlFoto;
     private String email;
@@ -32,7 +32,7 @@ public class Persona implements Serializable {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.sobre_mi = sobre_mi;
+        this.sobreMi = sobre_mi;
         this.lugarResidencia = lugarResidencia;
         this.urlFoto = urlFoto;
         this.email = email;

@@ -18,17 +18,18 @@ public class Experiencia implements Serializable {
     private Long id;
     private String trabajo;
     private String periodo;
-    private String descripcion;
-
+    private String descripcionTrabajo;
     public Experiencia() {
     }
 
-    public Experiencia(Long id, String trabajo, String periodo, String descripcion) {
+    public Experiencia(Long id, String trabajo, String periodo, String descripcionTrabajo) {
         this.id = id;
         this.trabajo = trabajo;
         this.periodo = periodo;
-        this.descripcion = descripcion;
+        this.descripcionTrabajo = descripcionTrabajo;
     }
+
+  
     
     
 }
