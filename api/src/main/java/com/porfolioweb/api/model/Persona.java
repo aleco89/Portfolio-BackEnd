@@ -1,7 +1,6 @@
 
 package com.porfolioweb.api.model;
 
-import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,7 +11,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Persona implements Serializable {
+public class Persona {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
@@ -24,21 +23,36 @@ public class Persona implements Serializable {
     private String email;
     private String username;
     private String password;
+    
+    /*
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "persona")    
+    private List<Educacion> educacion;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "persona")    
+    private List<Experiencia> experiencia;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "persona")    
+    private List<Idioma> idioma;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "persona")    
+    private List<Skill> skill;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "persona")    
+    private List<Proyecto> proyecto;
+    */
 
     public Persona() {
     }
 
-    public Persona(Long id, String nombre, String apellido, String sobre_mi, String lugarResidencia, String urlFoto, String email, String username, String password) {
+    public Persona(Long id, String nombre, String apellido, String sobreMi, String lugarResidencia, String urlFoto, String email, String username, String password) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.sobreMi = sobre_mi;
+        this.sobreMi = sobreMi;
         this.lugarResidencia = lugarResidencia;
         this.urlFoto = urlFoto;
         this.email = email;
         this.username = username;
         this.password = password;
+        
     }
 
+    
    
 }

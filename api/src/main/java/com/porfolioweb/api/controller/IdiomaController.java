@@ -25,7 +25,7 @@ public class IdiomaController {
         idiServ.createIdioma(idi);
     }
     
-    @GetMapping ("/ver/idioma")
+    @GetMapping ("/ver/idiomas")
     @ResponseBody
     public List<Idioma> verIdioma() {
         return idiServ.verIdioma();

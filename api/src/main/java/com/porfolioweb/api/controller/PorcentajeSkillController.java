@@ -31,9 +31,9 @@ public class PorcentajeSkillController {
         return psServ.verPorcentajeSkill();
     }
     
-   @GetMapping ("/ver/porcentajeskill/{id}")
-   @ResponseBody
-   public PorcentajeSkill findPorcentajeSkill (@PathVariable Long id){
+    @GetMapping ("/ver/porcentajeskill/{id}")
+    @ResponseBody
+    public PorcentajeSkill findPorcentajeSkill (@PathVariable Long id){
        return psServ.findPorcentajeSkill(id);
     }
     

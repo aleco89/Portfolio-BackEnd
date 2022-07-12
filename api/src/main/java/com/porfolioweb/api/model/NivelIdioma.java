@@ -1,7 +1,6 @@
 
 package com.porfolioweb.api.model;
 
-import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,19 +11,19 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class NivelIdioma implements Serializable {
+public class NivelIdioma {
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
-    private String nivel; 
+    private String nivel;     
+    
 
     public NivelIdioma() {
     }
 
     public NivelIdioma(Long id, String nivel) {
         this.id = id;
-        this.nivel = nivel;
+        this.nivel = nivel;    
     }
-    
-    
+       
 }
